@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Search and find government tenders - GemProService.in">
+	<title>Tenders - GemProService.in</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="logo">
+				<a href="index.html">
+					<h1>GemProService.in</h1>
+				</a>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="tenders.html">Tenders</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div class="mobile-menu">
+				<i class="fas fa-bars"></i>
+			</div>
+		</nav>
+	</header>
+
+	<main class="tenders-page">
+		<section class="tenders-hero">
+			<h1>Find Government Tenders</h1>
+			<p>Search through thousands of active government tenders</p>
+			<div class="tender-search">
+				<div class="search-filters">
+					<input type="text" placeholder="Search by keywords..." class="search-input">
+					<select class="category-select">
+						<option value="">All Categories</option>
+						<option value="construction">Construction</option>
+						<option value="it">IT & Technology</option>
+						<option value="medical">Medical Equipment</option>
+						<option value="services">Services</option>
+					</select>
+					<button onclick="showSearchMessage()" class="search-btn">Search Tenders</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="active-tenders">
+			<h2>Active Tenders</h2>
+			<div class="tender-grid">
+				<!-- Sample Tender Cards -->
+				<div class="tender-card">
+					<div class="tender-header">
+						<span class="tender-category">Construction</span>
+						<span class="tender-date">Closing: 30 Mar 2024</span>
+					</div>
+					<h3>Construction of Government School Building</h3>
+					<p>Tender for construction of new school building including classrooms, labs, and administrative block.</p>
+					<div class="tender-details">
+						<span><i class="fas fa-map-marker-alt"></i> Location: Delhi</span>
+						<span><i class="fas fa-inr"></i> Value: ₹2.5 Cr</span>
+					</div>
+					<button onclick="showSearchMessage()" class="view-tender">View Details</button>
+				</div>
+
+				<div class="tender-card">
+					<div class="tender-header">
+						<span class="tender-category">IT Services</span>
+						<span class="tender-date">Closing: 15 Apr 2024</span>
+					</div>
+					<h3>IT Infrastructure Development</h3>
+					<p>Setup and maintenance of IT infrastructure for government offices including hardware and networking.</p>
+					<div class="tender-details">
+						<span><i class="fas fa-map-marker-alt"></i> Location: Mumbai</span>
+						<span><i class="fas fa-inr"></i> Value: ₹1.8 Cr</span>
+					</div>
+					<button onclick="showSearchMessage()" class="view-tender">View Details</button>
+				</div>
+
+				<div class="tender-card">
+					<div class="tender-header">
+						<span class="tender-category">Medical</span>
+						<span class="tender-date">Closing: 10 Apr 2024</span>
+					</div>
+					<h3>Medical Equipment Supply</h3>
+					<p>Supply and installation of medical equipment for government hospital including diagnostic tools.</p>
+					<div class="tender-details">
+						<span><i class="fas fa-map-marker-alt"></i> Location: Bangalore</span>
+						<span><i class="fas fa-inr"></i> Value: ₹3.2 Cr</span>
+					</div>
+					<button onclick="showSearchMessage()" class="view-tender">View Details</button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-content">
+			<div class="footer-section">
+				<h3>Contact Us</h3>
+				<p>Email: info@gemproservice.in</p>
+				<p>Phone: +91 XXXXXXXXXX</p>
+			</div>
+			<div class="footer-section">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2025 GemProService.in. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

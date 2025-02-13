@@ -1,0 +1,142 @@
+/* About Page Styles */
+.about-page {
+	padding-top: 80px;
+}
+
+.about-hero {
+	background: var(--primary-color);
+	color: white;
+	text-align: center;
+	padding: 4rem 1rem;
+}
+
+.about-hero h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.about-content {
+	padding: 4rem 5%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.mission-vision {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
+	margin-bottom: 4rem;
+}
+
+.mission, .vision {
+	text-align: center;
+	padding: 2rem;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mission i, .vision i {
+	font-size: 3rem;
+	color: var(--primary-color);
+	margin-bottom: 1rem;
+}
+
+.mission h2, .vision h2 {
+	color: var(--primary-color);
+	margin-bottom: 1rem;
+}
+
+.values {
+	margin-bottom: 4rem;
+}
+
+.values h2, .why-choose-us h2, .testimonials h2 {
+	text-align: center;
+	color: var(--primary-color);
+	margin-bottom: 2rem;
+}
+
+.values-grid, .features-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2rem;
+}
+
+.value-card, .feature {
+	text-align: center;
+	padding: 2rem;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.value-card i, .feature i {
+	font-size: 2rem;
+	color: var(--secondary-color);
+	margin-bottom: 1rem;
+}
+
+.value-card h3, .feature h3 {
+	color: var(--primary-color);
+	margin-bottom: 1rem;
+}
+
+.why-choose-us {
+	margin-bottom: 4rem;
+}
+
+.testimonials {
+	background: var(--light-bg);
+	padding: 4rem 5%;
+}
+
+.testimonial-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.testimonial-card {
+	background: white;
+	padding: 2rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.testimonial-card p {
+	font-style: italic;
+	margin-bottom: 1.5rem;
+}
+
+.client-info h4 {
+	color: var(--primary-color);
+	margin-bottom: 0.5rem;
+}
+
+.client-info p {
+	font-style: normal;
+	color: var(--text-color);
+	font-size: 0.9rem;
+}
+
+/* Mobile Responsive Adjustments for About Page */
+@media (max-width: 768px) {
+	.about-hero h1 {
+		font-size: 2rem;
+	}
+
+	.mission-vision, .values-grid, .features-grid, .testimonial-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.about-content {
+		padding: 2rem 5%;
+	}
+
+	.mission, .vision, .value-card, .feature, .testimonial-card {
+		padding: 1.5rem;
+	}
+}

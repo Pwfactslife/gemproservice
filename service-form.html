@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Request service from GemProService.in">
+	<title>Request Service - GemProService.in</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="logo">
+				<a href="index.html">
+					<h1>GemProService.in</h1>
+				</a>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="tenders.html">Tenders</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div class="mobile-menu">
+				<i class="fas fa-bars"></i>
+			</div>
+		</nav>
+	</header>
+
+	<main class="form-page">
+		<div class="form-container">
+			<div class="success-message" id="successMessage">
+				Thank you! Your request has been sent successfully. We'll contact you shortly.
+			</div>
+			
+			<h1>Request Service</h1>
+			<p>Please fill out the form below and we'll get back to you shortly.</p>
+			
+			<form class="service-form" id="serviceForm" onsubmit="handleFormSubmit(event)">
+				<div class="form-group">
+					<label for="name"><i class="fas fa-user"></i> Full Name *</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="phone"><i class="fas fa-phone"></i> Phone Number *</label>
+					<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="company"><i class="fas fa-building"></i> Company Name *</label>
+					<input type="text" id="company" name="company" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="service"><i class="fas fa-cog"></i> Service Required *</label>
+					<select id="service" name="service" required>
+						<option value="">Select a Service</option>
+						<option value="gem">GeM Registration</option>
+						<option value="tender">Tender Filing</option>
+						<option value="alerts">Tender Alerts</option>
+						<option value="bidding">Bid Assistance</option>
+						<option value="dsc">Digital Signature Certificate</option>
+						<option value="msme">MSME Registration</option>
+					</select>
+				</div>
+				
+				<div class="form-group">
+					<label for="details"><i class="fas fa-comment"></i> Additional Details</label>
+					<textarea id="details" name="details" rows="4" placeholder="Please provide any specific requirements or questions..."></textarea>
+				</div>
+				
+				<button type="submit" class="submit-btn">
+					<i class="fas fa-paper-plane"></i> Submit Request
+				</button>
+			</form>
+
+			<div class="contact-info">
+				<p>Need immediate assistance?</p>
+				<p>
+					Email us at <a href="mailto:info@gemproservice.in">info@gemproservice.in</a>
+					or call us at <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a>
+				</p>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer-content">
+			<div class="footer-section">
+				<h3>Contact Us</h3>
+				<p>Email: info@gemproservice.in</p>
+				<p>Phone: +91 XXXXXXXXXX</p>
+			</div>
+			<div class="footer-section">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2025 GemProService.in. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
